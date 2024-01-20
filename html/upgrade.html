@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>upgrade API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>upgrade</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import pygame
+from settings import *
+
+
+class Upgrade:
+    &#34;&#34;&#34;
+    The Upgrade class represents the upgrade system in the game.
+    It displays the player&#39;s stats and allows the player to upgrade them.
+
+    :param player: The player object.
+    &#34;&#34;&#34;
+
+    def __init__(self, player):
+        &#34;&#34;&#34;
+        This method initializes an Upgrade object.
+        It gets the display surface, sets the font, and sets up the upgrade items.
+
+        :param player: The player object.
+        &#34;&#34;&#34;
+        self.display_surface = pygame.display.get_surface()
+        self.player = player
+        self.attribute_nr = len(player.stats)
+        self.attribute_names = list(player.stats.keys())
+        self.max_values = list(player.max_stats.values())
+        self.font = pygame.font.Font(UI_FONT, UI_FONT_SIZE)
+
+        self.height = self.display_surface.get_size()[1] * 0.8
+        self.width = self.display_surface.get_size()[0] // 4
+        self.create_items()
+
+        self.selection_index = 0
+        self.selection_time = None
+        self.can_move = True
+
+    def input(self):
+        &#34;&#34;&#34;
+        This method handles player input for the upgrade system.
+        It checks if the arrow keys are pressed and updates the selection index accordingly.
+        It also checks if the space key is pressed and triggers the selected upgrade.
+        &#34;&#34;&#34;
+        keys = pygame.key.get_pressed()
+
+        if self.can_move:
+            if keys[pygame.K_RIGHT] and self.selection_index &lt; self.attribute_nr - 1:
+                self.selection_index += 1
+                self.can_move = False
+                self.selection_time = pygame.time.get_ticks()
+            elif keys[pygame.K_LEFT] and self.selection_index &gt;= 1:
+                self.selection_index -= 1
+                self.can_move = False
+                self.selection_time = pygame.time.get_ticks()
+
+        space_pressed = keys[pygame.K_SPACE]
+
+        if space_pressed and not self.prev_space_pressed:
+            self.can_move = False
+            self.selection_time = pygame.time.get_ticks()
+            self.item_list[self.selection_index].trigger(self.player)
+
+        self.prev_space_pressed = space_pressed
+        self.selection_cooldown()
+
+    def selection_cooldown(self):
+        &#34;&#34;&#34;
+        This method handles the selection cooldown.
+        If the player cannot move, it checks if the cooldown has passed and allows the player to move.
+        &#34;&#34;&#34;
+        if not self.can_move:
+            current_time = pygame.time.get_ticks()
+            if current_time - self.selection_time &gt;= 300:
+                self.can_move = True
+
+    def create_items(self):
+        &#34;&#34;&#34;
+        This method creates the upgrade items.
+        It calculates the position of each item and creates an Item object for it.
+        &#34;&#34;&#34;
+        self.item_list = []
+
+        for item, index in enumerate(range(self.attribute_nr)):
+            # horizontal position
+            full_width = self.display_surface.get_size()[0]
+            increment = full_width // self.attribute_nr
+            left = (item * increment) + (increment - self.width) // 2
+
+            # vertical position
+            top = self.display_surface.get_size()[1] * 0.1
+            # create the box
+            item = Item(left, top, self.width, self.height, index, self.font)
+            self.item_list.append(item)
+
+    def display(self):
+        &#34;&#34;&#34;
+        This method displays the upgrade system.
+        It handles player input, displays the upgrade items, and handles the selection cooldown.
+        &#34;&#34;&#34;
+        self.input()
+        self.selection_cooldown()
+
+        for index, item in enumerate(self.item_list):
+            name = self.attribute_names[index]
+            value = self.player.get_value_by_index(index)
+            max_value = self.max_values[index]
+            item.display(self.display_surface, self.selection_index, name, value, max_value)
+
+
+class Item:
+    &#34;&#34;&#34;
+    The Item class represents an upgrade item in the game.
+
+    :param left: The left coordinate of the item.
+    :param t: The top coordinate of the item.
+    :param w: The width of the item.
+    :param h: The height of the item.
+    :param index: The index of the item.
+    :param font: The font to use for the item.
+    &#34;&#34;&#34;
+
+    def __init__(self, left, t, w, h, index, font):
+        &#34;&#34;&#34;
+        This method initializes an Item object. It sets up the rect, index, and font.
+
+        :param left: The left coordinate of the item.
+        :param t: The top coordinate of the item.
+        :param w: The width of the item.
+        :param h: The height of the item.
+        :param index: The index of the item.
+        :param font: The font to use for the item.
+        &#34;&#34;&#34;
+        self.rect = pygame.Rect(left, t, w, h)
+        self.index = index
+        self.font = font
+
+    def display(self, surface, selection_num, name, value, max_value):
+        &#34;&#34;&#34;
+        This method displays the item. It draws the item&#39;s rectangle and displays the item&#39;s name and value.
+
+        :param surface: The surface to draw on.
+        :param selection_num: The index of the currently selected item.
+        :param name: The name of the item.
+        :param value: The current value of the item.
+        :param max_value: The maximum value of the item.
+        &#34;&#34;&#34;
+        if self.index == selection_num:
+            pygame.draw.rect(surface, UPGRADE_BG_COLOR_SELECTED, self.rect)
+            pygame.draw.rect(surface, UI_BORDER_COLOR, self.rect, 4)
+        else:
+            pygame.draw.rect(surface, UI_BG_COLOR, self.rect)
+            pygame.draw.rect(surface, UI_BORDER_COLOR, self.rect, 4)
+
+        self.display_names(surface, name, self.index == selection_num)
+        self.display_bar(surface, value, max_value, self.index == selection_num)
+
+    def display_bar(self, surface, value, max_value, selected):
+        &#34;&#34;&#34;
+        This method displays the item&#39;s value bar.
+        It draws a line representing the maximum value and a rectangle representing the current value.
+
+        :param surface: The surface to draw on.
+        :param value: The current value of the item.
+        :param max_value: The maximum value of the item.
+        :param selected: Whether the item is selected.
+        &#34;&#34;&#34;
+        # drawing setup
+        top = self.rect.midtop + pygame.math.Vector2(0, 60)
+        bottom = self.rect.midbottom - pygame.math.Vector2(0, 60)
+        color = BAR_COLOR_SELECTED if selected else BAR_COLOR
+
+        # bar setup
+        full_height = bottom[1] - top[1]
+        relative_number = (value / max_value) * full_height
+        value_rect = pygame.Rect(top[0] - 15, bottom[1] - relative_number, 30, 10)
+
+        # draw elements
+        pygame.draw.line(surface, color, top, bottom, 5)
+        pygame.draw.rect(surface, color, value_rect)
+
+    def trigger(self, player):
+        &#34;&#34;&#34;
+        This method triggers the item&#39;s upgrade.
+        It increases the player&#39;s stat and sets the player&#39;s upgrade_performed attribute to True.
+
+        :param player: The player object.
+        &#34;&#34;&#34;
+        upgrade_atrtibute = list(player.stats.keys())[self.index]
+        player.stats[upgrade_atrtibute] *= 1.2
+        if player.stats[upgrade_atrtibute] &gt; player.max_stats[upgrade_atrtibute]:
+            player.stats[upgrade_atrtibute] = player.max_stats[upgrade_atrtibute]
+        player.upgrade_performed = True
+
+    def display_names(self, surface, name, selected):
+        &#34;&#34;&#34;
+        This method displays the item&#39;s name. It renders the name and draws it on the surface.
+
+        :param surface: The surface to draw on.
+        :param name: The name of the item.
+        :param selected: Whether the item is selected.
+        &#34;&#34;&#34;
+        color = TEXT_COLOR_SELECTED if selected else UI_TEXT_COLOR
+
+        # title
+        title_surf = self.font.render(name, False, color)
+        title_rect = title_surf.get_rect(midtop=self.rect.midtop + pygame.math.Vector2(0, 20))
+
+        surface.blit(title_surf, title_rect)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="upgrade.Item"><code class="flex name class">
+<span>class <span class="ident">Item</span></span>
+<span>(</span><span>left, t, w, h, index, font)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>The Item class represents an upgrade item in the game.</p>
+<p>:param left: The left coordinate of the item.
+:param t: The top coordinate of the item.
+:param w: The width of the item.
+:param h: The height of the item.
+:param index: The index of the item.
+:param font: The font to use for the item.</p>
+<p>This method initializes an Item object. It sets up the rect, index, and font.</p>
+<p>:param left: The left coordinate of the item.
+:param t: The top coordinate of the item.
+:param w: The width of the item.
+:param h: The height of the item.
+:param index: The index of the item.
+:param font: The font to use for the item.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Item:
+    &#34;&#34;&#34;
+    The Item class represents an upgrade item in the game.
+
+    :param left: The left coordinate of the item.
+    :param t: The top coordinate of the item.
+    :param w: The width of the item.
+    :param h: The height of the item.
+    :param index: The index of the item.
+    :param font: The font to use for the item.
+    &#34;&#34;&#34;
+
+    def __init__(self, left, t, w, h, index, font):
+        &#34;&#34;&#34;
+        This method initializes an Item object. It sets up the rect, index, and font.
+
+        :param left: The left coordinate of the item.
+        :param t: The top coordinate of the item.
+        :param w: The width of the item.
+        :param h: The height of the item.
+        :param index: The index of the item.
+        :param font: The font to use for the item.
+        &#34;&#34;&#34;
+        self.rect = pygame.Rect(left, t, w, h)
+        self.index = index
+        self.font = font
+
+    def display(self, surface, selection_num, name, value, max_value):
+        &#34;&#34;&#34;
+        This method displays the item. It draws the item&#39;s rectangle and displays the item&#39;s name and value.
+
+        :param surface: The surface to draw on.
+        :param selection_num: The index of the currently selected item.
+        :param name: The name of the item.
+        :param value: The current value of the item.
+        :param max_value: The maximum value of the item.
+        &#34;&#34;&#34;
+        if self.index == selection_num:
+            pygame.draw.rect(surface, UPGRADE_BG_COLOR_SELECTED, self.rect)
+            pygame.draw.rect(surface, UI_BORDER_COLOR, self.rect, 4)
+        else:
+            pygame.draw.rect(surface, UI_BG_COLOR, self.rect)
+            pygame.draw.rect(surface, UI_BORDER_COLOR, self.rect, 4)
+
+        self.display_names(surface, name, self.index == selection_num)
+        self.display_bar(surface, value, max_value, self.index == selection_num)
+
+    def display_bar(self, surface, value, max_value, selected):
+        &#34;&#34;&#34;
+        This method displays the item&#39;s value bar.
+        It draws a line representing the maximum value and a rectangle representing the current value.
+
+        :param surface: The surface to draw on.
+        :param value: The current value of the item.
+        :param max_value: The maximum value of the item.
+        :param selected: Whether the item is selected.
+        &#34;&#34;&#34;
+        # drawing setup
+        top = self.rect.midtop + pygame.math.Vector2(0, 60)
+        bottom = self.rect.midbottom - pygame.math.Vector2(0, 60)
+        color = BAR_COLOR_SELECTED if selected else BAR_COLOR
+
+        # bar setup
+        full_height = bottom[1] - top[1]
+        relative_number = (value / max_value) * full_height
+        value_rect = pygame.Rect(top[0] - 15, bottom[1] - relative_number, 30, 10)
+
+        # draw elements
+        pygame.draw.line(surface, color, top, bottom, 5)
+        pygame.draw.rect(surface, color, value_rect)
+
+    def trigger(self, player):
+        &#34;&#34;&#34;
+        This method triggers the item&#39;s upgrade.
+        It increases the player&#39;s stat and sets the player&#39;s upgrade_performed attribute to True.
+
+        :param player: The player object.
+        &#34;&#34;&#34;
+        upgrade_atrtibute = list(player.stats.keys())[self.index]
+        player.stats[upgrade_atrtibute] *= 1.2
+        if player.stats[upgrade_atrtibute] &gt; player.max_stats[upgrade_atrtibute]:
+            player.stats[upgrade_atrtibute] = player.max_stats[upgrade_atrtibute]
+        player.upgrade_performed = True
+
+    def display_names(self, surface, name, selected):
+        &#34;&#34;&#34;
+        This method displays the item&#39;s name. It renders the name and draws it on the surface.
+
+        :param surface: The surface to draw on.
+        :param name: The name of the item.
+        :param selected: Whether the item is selected.
+        &#34;&#34;&#34;
+        color = TEXT_COLOR_SELECTED if selected else UI_TEXT_COLOR
+
+        # title
+        title_surf = self.font.render(name, False, color)
+        title_rect = title_surf.get_rect(midtop=self.rect.midtop + pygame.math.Vector2(0, 20))
+
+        surface.blit(title_surf, title_rect)</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="upgrade.Item.display"><code class="name flex">
+<span>def <span class="ident">display</span></span>(<span>self, surface, selection_num, name, value, max_value)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method displays the item. It draws the item's rectangle and displays the item's name and value.</p>
+<p>:param surface: The surface to draw on.
+:param selection_num: The index of the currently selected item.
+:param name: The name of the item.
+:param value: The current value of the item.
+:param max_value: The maximum value of the item.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def display(self, surface, selection_num, name, value, max_value):
+    &#34;&#34;&#34;
+    This method displays the item. It draws the item&#39;s rectangle and displays the item&#39;s name and value.
+
+    :param surface: The surface to draw on.
+    :param selection_num: The index of the currently selected item.
+    :param name: The name of the item.
+    :param value: The current value of the item.
+    :param max_value: The maximum value of the item.
+    &#34;&#34;&#34;
+    if self.index == selection_num:
+        pygame.draw.rect(surface, UPGRADE_BG_COLOR_SELECTED, self.rect)
+        pygame.draw.rect(surface, UI_BORDER_COLOR, self.rect, 4)
+    else:
+        pygame.draw.rect(surface, UI_BG_COLOR, self.rect)
+        pygame.draw.rect(surface, UI_BORDER_COLOR, self.rect, 4)
+
+    self.display_names(surface, name, self.index == selection_num)
+    self.display_bar(surface, value, max_value, self.index == selection_num)</code></pre>
+</details>
+</dd>
+<dt id="upgrade.Item.display_bar"><code class="name flex">
+<span>def <span class="ident">display_bar</span></span>(<span>self, surface, value, max_value, selected)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method displays the item's value bar.
+It draws a line representing the maximum value and a rectangle representing the current value.</p>
+<p>:param surface: The surface to draw on.
+:param value: The current value of the item.
+:param max_value: The maximum value of the item.
+:param selected: Whether the item is selected.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def display_bar(self, surface, value, max_value, selected):
+    &#34;&#34;&#34;
+    This method displays the item&#39;s value bar.
+    It draws a line representing the maximum value and a rectangle representing the current value.
+
+    :param surface: The surface to draw on.
+    :param value: The current value of the item.
+    :param max_value: The maximum value of the item.
+    :param selected: Whether the item is selected.
+    &#34;&#34;&#34;
+    # drawing setup
+    top = self.rect.midtop + pygame.math.Vector2(0, 60)
+    bottom = self.rect.midbottom - pygame.math.Vector2(0, 60)
+    color = BAR_COLOR_SELECTED if selected else BAR_COLOR
+
+    # bar setup
+    full_height = bottom[1] - top[1]
+    relative_number = (value / max_value) * full_height
+    value_rect = pygame.Rect(top[0] - 15, bottom[1] - relative_number, 30, 10)
+
+    # draw elements
+    pygame.draw.line(surface, color, top, bottom, 5)
+    pygame.draw.rect(surface, color, value_rect)</code></pre>
+</details>
+</dd>
+<dt id="upgrade.Item.display_names"><code class="name flex">
+<span>def <span class="ident">display_names</span></span>(<span>self, surface, name, selected)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method displays the item's name. It renders the name and draws it on the surface.</p>
+<p>:param surface: The surface to draw on.
+:param name: The name of the item.
+:param selected: Whether the item is selected.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def display_names(self, surface, name, selected):
+    &#34;&#34;&#34;
+    This method displays the item&#39;s name. It renders the name and draws it on the surface.
+
+    :param surface: The surface to draw on.
+    :param name: The name of the item.
+    :param selected: Whether the item is selected.
+    &#34;&#34;&#34;
+    color = TEXT_COLOR_SELECTED if selected else UI_TEXT_COLOR
+
+    # title
+    title_surf = self.font.render(name, False, color)
+    title_rect = title_surf.get_rect(midtop=self.rect.midtop + pygame.math.Vector2(0, 20))
+
+    surface.blit(title_surf, title_rect)</code></pre>
+</details>
+</dd>
+<dt id="upgrade.Item.trigger"><code class="name flex">
+<span>def <span class="ident">trigger</span></span>(<span>self, player)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method triggers the item's upgrade.
+It increases the player's stat and sets the player's upgrade_performed attribute to True.</p>
+<p>:param player: The player object.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def trigger(self, player):
+    &#34;&#34;&#34;
+    This method triggers the item&#39;s upgrade.
+    It increases the player&#39;s stat and sets the player&#39;s upgrade_performed attribute to True.
+
+    :param player: The player object.
+    &#34;&#34;&#34;
+    upgrade_atrtibute = list(player.stats.keys())[self.index]
+    player.stats[upgrade_atrtibute] *= 1.2
+    if player.stats[upgrade_atrtibute] &gt; player.max_stats[upgrade_atrtibute]:
+        player.stats[upgrade_atrtibute] = player.max_stats[upgrade_atrtibute]
+    player.upgrade_performed = True</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="upgrade.Upgrade"><code class="flex name class">
+<span>class <span class="ident">Upgrade</span></span>
+<span>(</span><span>player)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>The Upgrade class represents the upgrade system in the game.
+It displays the player's stats and allows the player to upgrade them.</p>
+<p>:param player: The player object.</p>
+<p>This method initializes an Upgrade object.
+It gets the display surface, sets the font, and sets up the upgrade items.</p>
+<p>:param player: The player object.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Upgrade:
+    &#34;&#34;&#34;
+    The Upgrade class represents the upgrade system in the game.
+    It displays the player&#39;s stats and allows the player to upgrade them.
+
+    :param player: The player object.
+    &#34;&#34;&#34;
+
+    def __init__(self, player):
+        &#34;&#34;&#34;
+        This method initializes an Upgrade object.
+        It gets the display surface, sets the font, and sets up the upgrade items.
+
+        :param player: The player object.
+        &#34;&#34;&#34;
+        self.display_surface = pygame.display.get_surface()
+        self.player = player
+        self.attribute_nr = len(player.stats)
+        self.attribute_names = list(player.stats.keys())
+        self.max_values = list(player.max_stats.values())
+        self.font = pygame.font.Font(UI_FONT, UI_FONT_SIZE)
+
+        self.height = self.display_surface.get_size()[1] * 0.8
+        self.width = self.display_surface.get_size()[0] // 4
+        self.create_items()
+
+        self.selection_index = 0
+        self.selection_time = None
+        self.can_move = True
+
+    def input(self):
+        &#34;&#34;&#34;
+        This method handles player input for the upgrade system.
+        It checks if the arrow keys are pressed and updates the selection index accordingly.
+        It also checks if the space key is pressed and triggers the selected upgrade.
+        &#34;&#34;&#34;
+        keys = pygame.key.get_pressed()
+
+        if self.can_move:
+            if keys[pygame.K_RIGHT] and self.selection_index &lt; self.attribute_nr - 1:
+                self.selection_index += 1
+                self.can_move = False
+                self.selection_time = pygame.time.get_ticks()
+            elif keys[pygame.K_LEFT] and self.selection_index &gt;= 1:
+                self.selection_index -= 1
+                self.can_move = False
+                self.selection_time = pygame.time.get_ticks()
+
+        space_pressed = keys[pygame.K_SPACE]
+
+        if space_pressed and not self.prev_space_pressed:
+            self.can_move = False
+            self.selection_time = pygame.time.get_ticks()
+            self.item_list[self.selection_index].trigger(self.player)
+
+        self.prev_space_pressed = space_pressed
+        self.selection_cooldown()
+
+    def selection_cooldown(self):
+        &#34;&#34;&#34;
+        This method handles the selection cooldown.
+        If the player cannot move, it checks if the cooldown has passed and allows the player to move.
+        &#34;&#34;&#34;
+        if not self.can_move:
+            current_time = pygame.time.get_ticks()
+            if current_time - self.selection_time &gt;= 300:
+                self.can_move = True
+
+    def create_items(self):
+        &#34;&#34;&#34;
+        This method creates the upgrade items.
+        It calculates the position of each item and creates an Item object for it.
+        &#34;&#34;&#34;
+        self.item_list = []
+
+        for item, index in enumerate(range(self.attribute_nr)):
+            # horizontal position
+            full_width = self.display_surface.get_size()[0]
+            increment = full_width // self.attribute_nr
+            left = (item * increment) + (increment - self.width) // 2
+
+            # vertical position
+            top = self.display_surface.get_size()[1] * 0.1
+            # create the box
+            item = Item(left, top, self.width, self.height, index, self.font)
+            self.item_list.append(item)
+
+    def display(self):
+        &#34;&#34;&#34;
+        This method displays the upgrade system.
+        It handles player input, displays the upgrade items, and handles the selection cooldown.
+        &#34;&#34;&#34;
+        self.input()
+        self.selection_cooldown()
+
+        for index, item in enumerate(self.item_list):
+            name = self.attribute_names[index]
+            value = self.player.get_value_by_index(index)
+            max_value = self.max_values[index]
+            item.display(self.display_surface, self.selection_index, name, value, max_value)</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="upgrade.Upgrade.create_items"><code class="name flex">
+<span>def <span class="ident">create_items</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method creates the upgrade items.
+It calculates the position of each item and creates an Item object for it.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def create_items(self):
+    &#34;&#34;&#34;
+    This method creates the upgrade items.
+    It calculates the position of each item and creates an Item object for it.
+    &#34;&#34;&#34;
+    self.item_list = []
+
+    for item, index in enumerate(range(self.attribute_nr)):
+        # horizontal position
+        full_width = self.display_surface.get_size()[0]
+        increment = full_width // self.attribute_nr
+        left = (item * increment) + (increment - self.width) // 2
+
+        # vertical position
+        top = self.display_surface.get_size()[1] * 0.1
+        # create the box
+        item = Item(left, top, self.width, self.height, index, self.font)
+        self.item_list.append(item)</code></pre>
+</details>
+</dd>
+<dt id="upgrade.Upgrade.display"><code class="name flex">
+<span>def <span class="ident">display</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method displays the upgrade system.
+It handles player input, displays the upgrade items, and handles the selection cooldown.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def display(self):
+    &#34;&#34;&#34;
+    This method displays the upgrade system.
+    It handles player input, displays the upgrade items, and handles the selection cooldown.
+    &#34;&#34;&#34;
+    self.input()
+    self.selection_cooldown()
+
+    for index, item in enumerate(self.item_list):
+        name = self.attribute_names[index]
+        value = self.player.get_value_by_index(index)
+        max_value = self.max_values[index]
+        item.display(self.display_surface, self.selection_index, name, value, max_value)</code></pre>
+</details>
+</dd>
+<dt id="upgrade.Upgrade.input"><code class="name flex">
+<span>def <span class="ident">input</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method handles player input for the upgrade system.
+It checks if the arrow keys are pressed and updates the selection index accordingly.
+It also checks if the space key is pressed and triggers the selected upgrade.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def input(self):
+    &#34;&#34;&#34;
+    This method handles player input for the upgrade system.
+    It checks if the arrow keys are pressed and updates the selection index accordingly.
+    It also checks if the space key is pressed and triggers the selected upgrade.
+    &#34;&#34;&#34;
+    keys = pygame.key.get_pressed()
+
+    if self.can_move:
+        if keys[pygame.K_RIGHT] and self.selection_index &lt; self.attribute_nr - 1:
+            self.selection_index += 1
+            self.can_move = False
+            self.selection_time = pygame.time.get_ticks()
+        elif keys[pygame.K_LEFT] and self.selection_index &gt;= 1:
+            self.selection_index -= 1
+            self.can_move = False
+            self.selection_time = pygame.time.get_ticks()
+
+    space_pressed = keys[pygame.K_SPACE]
+
+    if space_pressed and not self.prev_space_pressed:
+        self.can_move = False
+        self.selection_time = pygame.time.get_ticks()
+        self.item_list[self.selection_index].trigger(self.player)
+
+    self.prev_space_pressed = space_pressed
+    self.selection_cooldown()</code></pre>
+</details>
+</dd>
+<dt id="upgrade.Upgrade.selection_cooldown"><code class="name flex">
+<span>def <span class="ident">selection_cooldown</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method handles the selection cooldown.
+If the player cannot move, it checks if the cooldown has passed and allows the player to move.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def selection_cooldown(self):
+    &#34;&#34;&#34;
+    This method handles the selection cooldown.
+    If the player cannot move, it checks if the cooldown has passed and allows the player to move.
+    &#34;&#34;&#34;
+    if not self.can_move:
+        current_time = pygame.time.get_ticks()
+        if current_time - self.selection_time &gt;= 300:
+            self.can_move = True</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="upgrade.Item" href="#upgrade.Item">Item</a></code></h4>
+<ul class="">
+<li><code><a title="upgrade.Item.display" href="#upgrade.Item.display">display</a></code></li>
+<li><code><a title="upgrade.Item.display_bar" href="#upgrade.Item.display_bar">display_bar</a></code></li>
+<li><code><a title="upgrade.Item.display_names" href="#upgrade.Item.display_names">display_names</a></code></li>
+<li><code><a title="upgrade.Item.trigger" href="#upgrade.Item.trigger">trigger</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="upgrade.Upgrade" href="#upgrade.Upgrade">Upgrade</a></code></h4>
+<ul class="">
+<li><code><a title="upgrade.Upgrade.create_items" href="#upgrade.Upgrade.create_items">create_items</a></code></li>
+<li><code><a title="upgrade.Upgrade.display" href="#upgrade.Upgrade.display">display</a></code></li>
+<li><code><a title="upgrade.Upgrade.input" href="#upgrade.Upgrade.input">input</a></code></li>
+<li><code><a title="upgrade.Upgrade.selection_cooldown" href="#upgrade.Upgrade.selection_cooldown">selection_cooldown</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

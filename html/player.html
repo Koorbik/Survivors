@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>player API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>player</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import pygame
+from settings import *
+from support import *
+from characters import Characters
+
+
+class Player(Characters):
+    &#34;&#34;&#34;
+    The Player class represents the player character in the game. It is a subclass of Characters.
+    It has methods for importing player assets, handling player input, getting the player&#39;s status,
+    handling player attacks, handling cooldowns, animating the player, getting the player&#39;s full attack damage,
+    resetting the upgrade flag, and updating the player.
+    &#34;&#34;&#34;
+
+    def __init__(self, pos, groups, obstacle_sprites, create_attack, destroy_weapon):
+        &#34;&#34;&#34;
+        This method initializes a Player object. It calls the superclass&#39;s __init__ method and sets up the sprite type,
+        image, and rect based on the player&#39;s status. It also sets up the player&#39;s stats, attack properties, and sounds.
+
+        :param pos: The initial position of the player.
+        :param groups: The groups that the player belongs to.
+        :param obstacle_sprites: The sprites that represent obstacles.
+        :param create_attack: The function to call to create an attack.
+        :param destroy_weapon: The function to call to destroy a weapon.
+        &#34;&#34;&#34;
+        super().__init__(groups)
+        self.image = pygame.image.load(&#39;graphics/player/right_idle/idle_right.png&#39;).convert_alpha()
+        self.rect = self.image.get_rect(topleft=pos)
+        self.hitbox = self.rect.inflate(-6, -26)
+
+        # graphics
+        self.import_player_assets()
+        self.status = &#39;right&#39;
+
+        self.attacking = True
+        self.attack_cooldown = 400
+        self.attack_duration = 400
+        self.attack_time = pygame.time.get_ticks()
+        self.reactivation_cooldown = 500
+        self.create_attack = create_attack
+        self.destroy_weapon = destroy_weapon
+        self.weapon_index = 0
+        self.weapon = list(weapon_data.keys())[self.weapon_index]
+
+        # stats
+        self.stats = {&#39;health&#39;: 150, &#39;attack&#39;: 10, &#39;speed&#39;: 5}
+        self.max_stats = {&#39;health&#39;: 450, &#39;attack&#39;: 30, &#39;speed&#39;: 10}
+        self.health = self.stats[&#39;health&#39;]
+        self.speed = self.stats[&#39;speed&#39;]
+
+        # damage timer
+        self.vulnerable = True
+        self.hurt_time = None
+        self.invincibility_duration = 500
+
+        self.obstacle_sprites = obstacle_sprites
+        self.upgrade_performed = False
+
+        # sounds
+        self.weapon_attack_sound = pygame.mixer.Sound(&#39;sounds/tornadoSound.mp3&#39;)
+        self.weapon_attack_sound.set_volume(0.4)
+
+    def import_player_assets(self):
+        &#34;&#34;&#34;
+        This method imports the sprites for the player.
+        It sets up the animations dictionary with the paths to the sprite images.
+        &#34;&#34;&#34;
+        character_path = &#39;graphics/player/&#39;
+        self.animations = {&#39;up&#39;: [], &#39;down&#39;: [], &#39;left&#39;: [], &#39;right&#39;: [],
+                           &#39;up_idle&#39;: [], &#39;down_idle&#39;: [], &#39;left_idle&#39;: [], &#39;right_idle&#39;: [],
+                           &#39;up_attack&#39;: [], &#39;down_attack&#39;: [], &#39;left_attack&#39;: [], &#39;right_attack&#39;: []}
+        for animation in self.animations.keys():
+            full_path = character_path + animation
+            self.animations[animation] = import_folder(full_path)
+
+    def input(self):
+        &#34;&#34;&#34;
+        This method handles player input.
+        It checks if the WSAD keys are pressed and sets the player&#39;s direction and status accordingly.
+        &#34;&#34;&#34;
+        keys = pygame.key.get_pressed()
+
+        if keys[pygame.K_w]:
+            self.direction.y = -1
+            self.status = &#39;up&#39;
+        elif keys[pygame.K_s]:
+            self.direction.y = 1
+            self.status = &#39;down&#39;
+        else:
+            self.direction.y = 0
+
+        if keys[pygame.K_d]:
+            self.direction.x = 1
+            self.status = &#39;right&#39;
+        elif keys[pygame.K_a]:
+            self.direction.x = -1
+            self.status = &#39;left&#39;
+        else:
+            self.direction.x = 0
+
+    def get_status(self):
+        &#34;&#34;&#34;
+        This method gets the player&#39;s status. If the player is idle, it adds &#39;_idle&#39; to the status.
+        If the player is attacking, it adds &#39;_attack&#39; to the status.
+        &#34;&#34;&#34;
+        if self.direction == pygame.math.Vector2(0, 0):
+            if &#39;idle&#39; not in self.status and not self.attacking:
+                self.status = self.status + &#39;_idle&#39;
+        if self.attacking:
+            if &#39;attack&#39; not in self.status:
+                if &#39;idle&#39; in self.status:
+                    self.status = self.status.replace(&#39;_idle&#39;, &#39;_attack&#39;)
+                else:
+                    self.status = self.status + &#39;_attack&#39;
+        else:
+            if &#39;attack&#39; in self.status:
+                self.status = self.status.replace(&#39;_attack&#39;, &#39;&#39;)
+
+    def attack(self):
+        &#34;&#34;&#34;
+        This method handles player attacks. If the player can attack, it sets the attack time and creates an attack.
+        If the player cannot attack, it checks if the reactivation cooldown has passed and allows the player to attack.
+        &#34;&#34;&#34;
+        current_time = pygame.time.get_ticks()
+
+        if not self.attacking and current_time - self.attack_time &gt;= self.reactivation_cooldown + \
+                weapon_data[self.weapon][&#39;cooldown&#39;]:
+            self.attacking = True
+            self.attack_time = current_time
+
+        if self.attacking:
+            if current_time - self.attack_time &gt; self.attack_duration:
+                self.destroy_weapon()
+                self.attacking = False
+                self.attack_time = current_time
+                self.create_attack()
+                self.weapon_attack_sound.play()
+
+    def cooldown(self):
+        &#34;&#34;&#34;
+        This method handles the player&#39;s cooldowns.
+        If the player is not vulnerable, it checks if the invincibility duration has passed
+        and makes the player vulnerable.
+        &#34;&#34;&#34;
+        current_time = pygame.time.get_ticks()
+        if not self.vulnerable:
+            if current_time - self.hurt_time &gt;= self.invincibility_duration:
+                self.vulnerable = True
+
+    def animate(self):
+        &#34;&#34;&#34;
+        This method animates the player.
+        It updates the frame index and sets the player&#39;s image to the current frame of the animation.
+        &#34;&#34;&#34;
+        animation_list = self.animations[self.status]
+        self.frame_index += self.animation_speed
+        if self.frame_index &gt;= len(animation_list):
+            self.frame_index = 0
+
+        self.image = animation_list[int(self.frame_index)]
+        self.rect = self.image.get_rect(center=self.hitbox.center)
+
+    def get_full_attack_damage(self):
+        &#34;&#34;&#34;
+        This method gets the player&#39;s full attack damage. It adds the player&#39;s attack stat to the weapon&#39;s damage.
+
+        :return: The player&#39;s full attack damage.
+        &#34;&#34;&#34;
+        base_damage = self.stats[&#39;attack&#39;]
+        weapon_damage = weapon_data[self.weapon][&#39;damage&#39;]
+        return base_damage + weapon_damage
+
+    def get_value_by_index(self, index):
+        &#34;&#34;&#34;
+        This method gets the value of a player stat by its index.
+
+        :param index: The index of the stat.
+        :return: The value of the stat.
+        &#34;&#34;&#34;
+        return list(self.stats.values())[index]
+
+    def reset_upgrade_flag(self):
+        &#34;&#34;&#34;
+        This method resets the player&#39;s upgrade flag. It sets the upgrade_performed attribute to False.
+        &#34;&#34;&#34;
+        self.upgrade_performed = False
+
+    def update(self):
+        &#34;&#34;&#34;
+        This method updates the player.
+        It handles player input, player attacks, cooldowns, player movement, player status, and player animation.
+        &#34;&#34;&#34;
+        self.input()
+        self.attack()
+        self.cooldown()
+        self.move(self.speed)
+        self.get_status()
+        self.animate()</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="player.Player"><code class="flex name class">
+<span>class <span class="ident">Player</span></span>
+<span>(</span><span>pos, groups, obstacle_sprites, create_attack, destroy_weapon)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>The Player class represents the player character in the game. It is a subclass of Characters.
+It has methods for importing player assets, handling player input, getting the player's status,
+handling player attacks, handling cooldowns, animating the player, getting the player's full attack damage,
+resetting the upgrade flag, and updating the player.</p>
+<p>This method initializes a Player object. It calls the superclass's <strong>init</strong> method and sets up the sprite type,
+image, and rect based on the player's status. It also sets up the player's stats, attack properties, and sounds.</p>
+<p>:param pos: The initial position of the player.
+:param groups: The groups that the player belongs to.
+:param obstacle_sprites: The sprites that represent obstacles.
+:param create_attack: The function to call to create an attack.
+:param destroy_weapon: The function to call to destroy a weapon.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Player(Characters):
+    &#34;&#34;&#34;
+    The Player class represents the player character in the game. It is a subclass of Characters.
+    It has methods for importing player assets, handling player input, getting the player&#39;s status,
+    handling player attacks, handling cooldowns, animating the player, getting the player&#39;s full attack damage,
+    resetting the upgrade flag, and updating the player.
+    &#34;&#34;&#34;
+
+    def __init__(self, pos, groups, obstacle_sprites, create_attack, destroy_weapon):
+        &#34;&#34;&#34;
+        This method initializes a Player object. It calls the superclass&#39;s __init__ method and sets up the sprite type,
+        image, and rect based on the player&#39;s status. It also sets up the player&#39;s stats, attack properties, and sounds.
+
+        :param pos: The initial position of the player.
+        :param groups: The groups that the player belongs to.
+        :param obstacle_sprites: The sprites that represent obstacles.
+        :param create_attack: The function to call to create an attack.
+        :param destroy_weapon: The function to call to destroy a weapon.
+        &#34;&#34;&#34;
+        super().__init__(groups)
+        self.image = pygame.image.load(&#39;graphics/player/right_idle/idle_right.png&#39;).convert_alpha()
+        self.rect = self.image.get_rect(topleft=pos)
+        self.hitbox = self.rect.inflate(-6, -26)
+
+        # graphics
+        self.import_player_assets()
+        self.status = &#39;right&#39;
+
+        self.attacking = True
+        self.attack_cooldown = 400
+        self.attack_duration = 400
+        self.attack_time = pygame.time.get_ticks()
+        self.reactivation_cooldown = 500
+        self.create_attack = create_attack
+        self.destroy_weapon = destroy_weapon
+        self.weapon_index = 0
+        self.weapon = list(weapon_data.keys())[self.weapon_index]
+
+        # stats
+        self.stats = {&#39;health&#39;: 150, &#39;attack&#39;: 10, &#39;speed&#39;: 5}
+        self.max_stats = {&#39;health&#39;: 450, &#39;attack&#39;: 30, &#39;speed&#39;: 10}
+        self.health = self.stats[&#39;health&#39;]
+        self.speed = self.stats[&#39;speed&#39;]
+
+        # damage timer
+        self.vulnerable = True
+        self.hurt_time = None
+        self.invincibility_duration = 500
+
+        self.obstacle_sprites = obstacle_sprites
+        self.upgrade_performed = False
+
+        # sounds
+        self.weapon_attack_sound = pygame.mixer.Sound(&#39;sounds/tornadoSound.mp3&#39;)
+        self.weapon_attack_sound.set_volume(0.4)
+
+    def import_player_assets(self):
+        &#34;&#34;&#34;
+        This method imports the sprites for the player.
+        It sets up the animations dictionary with the paths to the sprite images.
+        &#34;&#34;&#34;
+        character_path = &#39;graphics/player/&#39;
+        self.animations = {&#39;up&#39;: [], &#39;down&#39;: [], &#39;left&#39;: [], &#39;right&#39;: [],
+                           &#39;up_idle&#39;: [], &#39;down_idle&#39;: [], &#39;left_idle&#39;: [], &#39;right_idle&#39;: [],
+                           &#39;up_attack&#39;: [], &#39;down_attack&#39;: [], &#39;left_attack&#39;: [], &#39;right_attack&#39;: []}
+        for animation in self.animations.keys():
+            full_path = character_path + animation
+            self.animations[animation] = import_folder(full_path)
+
+    def input(self):
+        &#34;&#34;&#34;
+        This method handles player input.
+        It checks if the WSAD keys are pressed and sets the player&#39;s direction and status accordingly.
+        &#34;&#34;&#34;
+        keys = pygame.key.get_pressed()
+
+        if keys[pygame.K_w]:
+            self.direction.y = -1
+            self.status = &#39;up&#39;
+        elif keys[pygame.K_s]:
+            self.direction.y = 1
+            self.status = &#39;down&#39;
+        else:
+            self.direction.y = 0
+
+        if keys[pygame.K_d]:
+            self.direction.x = 1
+            self.status = &#39;right&#39;
+        elif keys[pygame.K_a]:
+            self.direction.x = -1
+            self.status = &#39;left&#39;
+        else:
+            self.direction.x = 0
+
+    def get_status(self):
+        &#34;&#34;&#34;
+        This method gets the player&#39;s status. If the player is idle, it adds &#39;_idle&#39; to the status.
+        If the player is attacking, it adds &#39;_attack&#39; to the status.
+        &#34;&#34;&#34;
+        if self.direction == pygame.math.Vector2(0, 0):
+            if &#39;idle&#39; not in self.status and not self.attacking:
+                self.status = self.status + &#39;_idle&#39;
+        if self.attacking:
+            if &#39;attack&#39; not in self.status:
+                if &#39;idle&#39; in self.status:
+                    self.status = self.status.replace(&#39;_idle&#39;, &#39;_attack&#39;)
+                else:
+                    self.status = self.status + &#39;_attack&#39;
+        else:
+            if &#39;attack&#39; in self.status:
+                self.status = self.status.replace(&#39;_attack&#39;, &#39;&#39;)
+
+    def attack(self):
+        &#34;&#34;&#34;
+        This method handles player attacks. If the player can attack, it sets the attack time and creates an attack.
+        If the player cannot attack, it checks if the reactivation cooldown has passed and allows the player to attack.
+        &#34;&#34;&#34;
+        current_time = pygame.time.get_ticks()
+
+        if not self.attacking and current_time - self.attack_time &gt;= self.reactivation_cooldown + \
+                weapon_data[self.weapon][&#39;cooldown&#39;]:
+            self.attacking = True
+            self.attack_time = current_time
+
+        if self.attacking:
+            if current_time - self.attack_time &gt; self.attack_duration:
+                self.destroy_weapon()
+                self.attacking = False
+                self.attack_time = current_time
+                self.create_attack()
+                self.weapon_attack_sound.play()
+
+    def cooldown(self):
+        &#34;&#34;&#34;
+        This method handles the player&#39;s cooldowns.
+        If the player is not vulnerable, it checks if the invincibility duration has passed
+        and makes the player vulnerable.
+        &#34;&#34;&#34;
+        current_time = pygame.time.get_ticks()
+        if not self.vulnerable:
+            if current_time - self.hurt_time &gt;= self.invincibility_duration:
+                self.vulnerable = True
+
+    def animate(self):
+        &#34;&#34;&#34;
+        This method animates the player.
+        It updates the frame index and sets the player&#39;s image to the current frame of the animation.
+        &#34;&#34;&#34;
+        animation_list = self.animations[self.status]
+        self.frame_index += self.animation_speed
+        if self.frame_index &gt;= len(animation_list):
+            self.frame_index = 0
+
+        self.image = animation_list[int(self.frame_index)]
+        self.rect = self.image.get_rect(center=self.hitbox.center)
+
+    def get_full_attack_damage(self):
+        &#34;&#34;&#34;
+        This method gets the player&#39;s full attack damage. It adds the player&#39;s attack stat to the weapon&#39;s damage.
+
+        :return: The player&#39;s full attack damage.
+        &#34;&#34;&#34;
+        base_damage = self.stats[&#39;attack&#39;]
+        weapon_damage = weapon_data[self.weapon][&#39;damage&#39;]
+        return base_damage + weapon_damage
+
+    def get_value_by_index(self, index):
+        &#34;&#34;&#34;
+        This method gets the value of a player stat by its index.
+
+        :param index: The index of the stat.
+        :return: The value of the stat.
+        &#34;&#34;&#34;
+        return list(self.stats.values())[index]
+
+    def reset_upgrade_flag(self):
+        &#34;&#34;&#34;
+        This method resets the player&#39;s upgrade flag. It sets the upgrade_performed attribute to False.
+        &#34;&#34;&#34;
+        self.upgrade_performed = False
+
+    def update(self):
+        &#34;&#34;&#34;
+        This method updates the player.
+        It handles player input, player attacks, cooldowns, player movement, player status, and player animation.
+        &#34;&#34;&#34;
+        self.input()
+        self.attack()
+        self.cooldown()
+        self.move(self.speed)
+        self.get_status()
+        self.animate()</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>characters.Characters</li>
+<li>pygame.sprite.Sprite</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="player.Player.animate"><code class="name flex">
+<span>def <span class="ident">animate</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method animates the player.
+It updates the frame index and sets the player's image to the current frame of the animation.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def animate(self):
+    &#34;&#34;&#34;
+    This method animates the player.
+    It updates the frame index and sets the player&#39;s image to the current frame of the animation.
+    &#34;&#34;&#34;
+    animation_list = self.animations[self.status]
+    self.frame_index += self.animation_speed
+    if self.frame_index &gt;= len(animation_list):
+        self.frame_index = 0
+
+    self.image = animation_list[int(self.frame_index)]
+    self.rect = self.image.get_rect(center=self.hitbox.center)</code></pre>
+</details>
+</dd>
+<dt id="player.Player.attack"><code class="name flex">
+<span>def <span class="ident">attack</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method handles player attacks. If the player can attack, it sets the attack time and creates an attack.
+If the player cannot attack, it checks if the reactivation cooldown has passed and allows the player to attack.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def attack(self):
+    &#34;&#34;&#34;
+    This method handles player attacks. If the player can attack, it sets the attack time and creates an attack.
+    If the player cannot attack, it checks if the reactivation cooldown has passed and allows the player to attack.
+    &#34;&#34;&#34;
+    current_time = pygame.time.get_ticks()
+
+    if not self.attacking and current_time - self.attack_time &gt;= self.reactivation_cooldown + \
+            weapon_data[self.weapon][&#39;cooldown&#39;]:
+        self.attacking = True
+        self.attack_time = current_time
+
+    if self.attacking:
+        if current_time - self.attack_time &gt; self.attack_duration:
+            self.destroy_weapon()
+            self.attacking = False
+            self.attack_time = current_time
+            self.create_attack()
+            self.weapon_attack_sound.play()</code></pre>
+</details>
+</dd>
+<dt id="player.Player.cooldown"><code class="name flex">
+<span>def <span class="ident">cooldown</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method handles the player's cooldowns.
+If the player is not vulnerable, it checks if the invincibility duration has passed
+and makes the player vulnerable.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def cooldown(self):
+    &#34;&#34;&#34;
+    This method handles the player&#39;s cooldowns.
+    If the player is not vulnerable, it checks if the invincibility duration has passed
+    and makes the player vulnerable.
+    &#34;&#34;&#34;
+    current_time = pygame.time.get_ticks()
+    if not self.vulnerable:
+        if current_time - self.hurt_time &gt;= self.invincibility_duration:
+            self.vulnerable = True</code></pre>
+</details>
+</dd>
+<dt id="player.Player.get_full_attack_damage"><code class="name flex">
+<span>def <span class="ident">get_full_attack_damage</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method gets the player's full attack damage. It adds the player's attack stat to the weapon's damage.</p>
+<p>:return: The player's full attack damage.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_full_attack_damage(self):
+    &#34;&#34;&#34;
+    This method gets the player&#39;s full attack damage. It adds the player&#39;s attack stat to the weapon&#39;s damage.
+
+    :return: The player&#39;s full attack damage.
+    &#34;&#34;&#34;
+    base_damage = self.stats[&#39;attack&#39;]
+    weapon_damage = weapon_data[self.weapon][&#39;damage&#39;]
+    return base_damage + weapon_damage</code></pre>
+</details>
+</dd>
+<dt id="player.Player.get_status"><code class="name flex">
+<span>def <span class="ident">get_status</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method gets the player's status. If the player is idle, it adds '_idle' to the status.
+If the player is attacking, it adds '_attack' to the status.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_status(self):
+    &#34;&#34;&#34;
+    This method gets the player&#39;s status. If the player is idle, it adds &#39;_idle&#39; to the status.
+    If the player is attacking, it adds &#39;_attack&#39; to the status.
+    &#34;&#34;&#34;
+    if self.direction == pygame.math.Vector2(0, 0):
+        if &#39;idle&#39; not in self.status and not self.attacking:
+            self.status = self.status + &#39;_idle&#39;
+    if self.attacking:
+        if &#39;attack&#39; not in self.status:
+            if &#39;idle&#39; in self.status:
+                self.status = self.status.replace(&#39;_idle&#39;, &#39;_attack&#39;)
+            else:
+                self.status = self.status + &#39;_attack&#39;
+    else:
+        if &#39;attack&#39; in self.status:
+            self.status = self.status.replace(&#39;_attack&#39;, &#39;&#39;)</code></pre>
+</details>
+</dd>
+<dt id="player.Player.get_value_by_index"><code class="name flex">
+<span>def <span class="ident">get_value_by_index</span></span>(<span>self, index)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method gets the value of a player stat by its index.</p>
+<p>:param index: The index of the stat.
+:return: The value of the stat.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_value_by_index(self, index):
+    &#34;&#34;&#34;
+    This method gets the value of a player stat by its index.
+
+    :param index: The index of the stat.
+    :return: The value of the stat.
+    &#34;&#34;&#34;
+    return list(self.stats.values())[index]</code></pre>
+</details>
+</dd>
+<dt id="player.Player.import_player_assets"><code class="name flex">
+<span>def <span class="ident">import_player_assets</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method imports the sprites for the player.
+It sets up the animations dictionary with the paths to the sprite images.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def import_player_assets(self):
+    &#34;&#34;&#34;
+    This method imports the sprites for the player.
+    It sets up the animations dictionary with the paths to the sprite images.
+    &#34;&#34;&#34;
+    character_path = &#39;graphics/player/&#39;
+    self.animations = {&#39;up&#39;: [], &#39;down&#39;: [], &#39;left&#39;: [], &#39;right&#39;: [],
+                       &#39;up_idle&#39;: [], &#39;down_idle&#39;: [], &#39;left_idle&#39;: [], &#39;right_idle&#39;: [],
+                       &#39;up_attack&#39;: [], &#39;down_attack&#39;: [], &#39;left_attack&#39;: [], &#39;right_attack&#39;: []}
+    for animation in self.animations.keys():
+        full_path = character_path + animation
+        self.animations[animation] = import_folder(full_path)</code></pre>
+</details>
+</dd>
+<dt id="player.Player.input"><code class="name flex">
+<span>def <span class="ident">input</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method handles player input.
+It checks if the WSAD keys are pressed and sets the player's direction and status accordingly.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def input(self):
+    &#34;&#34;&#34;
+    This method handles player input.
+    It checks if the WSAD keys are pressed and sets the player&#39;s direction and status accordingly.
+    &#34;&#34;&#34;
+    keys = pygame.key.get_pressed()
+
+    if keys[pygame.K_w]:
+        self.direction.y = -1
+        self.status = &#39;up&#39;
+    elif keys[pygame.K_s]:
+        self.direction.y = 1
+        self.status = &#39;down&#39;
+    else:
+        self.direction.y = 0
+
+    if keys[pygame.K_d]:
+        self.direction.x = 1
+        self.status = &#39;right&#39;
+    elif keys[pygame.K_a]:
+        self.direction.x = -1
+        self.status = &#39;left&#39;
+    else:
+        self.direction.x = 0</code></pre>
+</details>
+</dd>
+<dt id="player.Player.reset_upgrade_flag"><code class="name flex">
+<span>def <span class="ident">reset_upgrade_flag</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method resets the player's upgrade flag. It sets the upgrade_performed attribute to False.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def reset_upgrade_flag(self):
+    &#34;&#34;&#34;
+    This method resets the player&#39;s upgrade flag. It sets the upgrade_performed attribute to False.
+    &#34;&#34;&#34;
+    self.upgrade_performed = False</code></pre>
+</details>
+</dd>
+<dt id="player.Player.update"><code class="name flex">
+<span>def <span class="ident">update</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method updates the player.
+It handles player input, player attacks, cooldowns, player movement, player status, and player animation.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def update(self):
+    &#34;&#34;&#34;
+    This method updates the player.
+    It handles player input, player attacks, cooldowns, player movement, player status, and player animation.
+    &#34;&#34;&#34;
+    self.input()
+    self.attack()
+    self.cooldown()
+    self.move(self.speed)
+    self.get_status()
+    self.animate()</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="player.Player" href="#player.Player">Player</a></code></h4>
+<ul class="">
+<li><code><a title="player.Player.animate" href="#player.Player.animate">animate</a></code></li>
+<li><code><a title="player.Player.attack" href="#player.Player.attack">attack</a></code></li>
+<li><code><a title="player.Player.cooldown" href="#player.Player.cooldown">cooldown</a></code></li>
+<li><code><a title="player.Player.get_full_attack_damage" href="#player.Player.get_full_attack_damage">get_full_attack_damage</a></code></li>
+<li><code><a title="player.Player.get_status" href="#player.Player.get_status">get_status</a></code></li>
+<li><code><a title="player.Player.get_value_by_index" href="#player.Player.get_value_by_index">get_value_by_index</a></code></li>
+<li><code><a title="player.Player.import_player_assets" href="#player.Player.import_player_assets">import_player_assets</a></code></li>
+<li><code><a title="player.Player.input" href="#player.Player.input">input</a></code></li>
+<li><code><a title="player.Player.reset_upgrade_flag" href="#player.Player.reset_upgrade_flag">reset_upgrade_flag</a></code></li>
+<li><code><a title="player.Player.update" href="#player.Player.update">update</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
